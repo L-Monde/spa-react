@@ -50,6 +50,9 @@ code {
     text-align: left;
   }
   td {
-    background-color: blue;
+    padding: 5px;
+    min-width: 100px !important;
+    text-align: left;
+    background-color: aquamarine;
   }
 }
