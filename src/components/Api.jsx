@@ -1,4 +1,4 @@
-export default class Api {
+class Api {
   constructor(config) {
     this._url = config.url;
   }
@@ -7,3 +7,7 @@ export default class Api {
     return fetch(`${this._url}`).then((response) => response.json());
   }
 }
+const api = new Api({
+  url: "https://jsonplaceholder.typicode.com/posts",
+});
+export default api;

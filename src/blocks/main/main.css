@@ -1,0 +1,17 @@
+.main__heading {
+  background-color: #474955;
+}
+@media screen and (max-width: 840px) {
+  .css-quj9j6-MuiTable-root {
+    min-width: 100px !important;
+    text-align: left;
+  }
+  td {
+    max-width: 50vw !important;
+    padding: 5px !important;
+    text-align: left;
+  }
+  .css-18qulp9 {
+    min-width: 100px !important;
+  }
+}

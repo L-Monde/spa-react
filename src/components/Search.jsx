@@ -1,7 +1,7 @@
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import * as icon from "../images/searchIcon.svg";
-import { useSelector, useDispatch } from "react-redux";
+import icon from "../images/searchIcon.svg";
+import { useDispatch } from "react-redux";
 import { modify } from "../feats/findWord/wordSlice";
 
 function Search() {
@@ -17,7 +17,7 @@ function Search() {
           document.getElementById("testID").value = "";
         }}
       >
-        123123
+        <img src={icon} alt="" />
       </Button>
     </div>
   );

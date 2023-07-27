@@ -16,11 +16,11 @@ function Navigation() {
         Назад
       </Button>
       <div className="nav__pages">
-        <p className={count === 1 ? "test" : ""}>1</p>
-        <p className={count === 2 ? "test" : ""}>2</p>
-        <p className={count === 3 ? "test" : ""}>3</p>
-        <p className={count === 4 ? "test" : ""}>4</p>
-        <p className={count === 5 ? "test" : ""}>5</p>
+        <p className={count === 1 ? "nav__selected" : ""}>1</p>
+        <p className={count === 2 ? "nav__selected" : ""}>2</p>
+        <p className={count === 3 ? "nav__selected" : ""}>3</p>
+        <p className={count === 4 ? "nav__selected" : ""}>4</p>
+        <p className={count === 5 ? "nav__selected" : ""}>5</p>
       </div>
       <Button
         onClick={() => (count < 5 ? dispatch(increment()) : null)}
