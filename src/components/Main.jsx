@@ -22,11 +22,17 @@ function Main(props) {
 
   function filter(item) {
     if (ordered) {
+      document
+        .querySelector(`.main__heading-${item}`)
+        .classList.remove("main__selected");
       api.getData().then((res) => {
         setList({ res }.res);
       });
       setOrdered(false);
     } else {
+      document
+        .querySelector(`.main__heading-${item}`)
+        .classList.add("main__selected");
       const listAlt = [...list].sort((a, b) => a[item].localeCompare(b[item]));
       setList(listAlt);
       setOrdered(true);
@@ -38,7 +44,11 @@ function Main(props) {
         <TableHead>
           <TableRow className="main__heading">
             <TableCell sx={{ color: "white" }}>ID </TableCell>
-            <TableCell align="right" sx={{ color: "white" }}>
+            <TableCell
+              className="main__heading-title"
+              align="right"
+              sx={{ color: "white" }}
+            >
               Заголовок
               <Button
                 onClick={() => {
@@ -48,7 +58,11 @@ function Main(props) {
                 <img src={tick} alt="" />
               </Button>
             </TableCell>
-            <TableCell align="right" sx={{ color: "white" }}>
+            <TableCell
+              className="main__heading-body"
+              align="right"
+              sx={{ color: "white" }}
+            >
               Описание
               <Button
                 onClick={() => {

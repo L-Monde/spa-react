@@ -12,6 +12,7 @@
   justify-content: space-between;
 }
 .nav__selected {
+  background-color: aquamarine;
   color: rgb(0, 255, 13);
 }
 @media screen and (max-width: 840px) {

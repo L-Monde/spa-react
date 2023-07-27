@@ -1,6 +1,9 @@
 .main__heading {
   background-color: #474955;
 }
+.main__selected {
+  text-decoration: underline;
+}
 @media screen and (max-width: 840px) {
   .css-quj9j6-MuiTable-root {
     min-width: 100px !important;
