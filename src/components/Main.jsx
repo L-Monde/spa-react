@@ -22,6 +22,10 @@ function Main(props) {
 
   function filter(item) {
     if (ordered) {
+      document.querySelectorAll(".main__selected").forEach((element) => {
+        element.classList.remove("main__selected");
+      });
+
       document
         .querySelector(`.main__heading-${item}`)
         .classList.remove("main__selected");
